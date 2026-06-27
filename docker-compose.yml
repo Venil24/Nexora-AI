@@ -1,0 +1,82 @@
+version: "3.9"
+
+services:
+  # ---- Flask Backend ----
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: nexora_backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - MONGO_URI=${MONGO_URI}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - SECRET_KEY=${SECRET_KEY}
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - MAIL_SERVER=${MAIL_SERVER}
+      - MAIL_PORT=${MAIL_PORT}
+      - MAIL_USERNAME=${MAIL_USERNAME}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - CORS_ORIGINS=${CORS_ORIGINS}
+    volumes:
+      - ./backend/uploads:/app/uploads
+      - ./ml/trained_models:/app/ml/trained_models
+    depends_on:
+      - redis
+    networks:
+      - nexora_network
+
+  # ---- React Frontend ----
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: nexora_frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    environment:
+      - VITE_API_BASE_URL=http://backend:5000/api
+    depends_on:
+      - backend
+    networks:
+      - nexora_network
+
+  # ---- Redis (for rate limiting & caching) ----
+  redis:
+    image: redis:7-alpine
+    container_name: nexora_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - nexora_network
+
+  # ---- Nginx Reverse Proxy ----
+  nginx:
+    image: nginx:alpine
+    container_name: nexora_nginx
+    restart: unless-stopped
+    ports:
+      - "443:443"
+      - "8080:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - nexora_network
+
+volumes:
+  redis_data:
+
+networks:
+  nexora_network:
+    driver: bridge

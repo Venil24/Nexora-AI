@@ -1,0 +1,285 @@
+{
+  "trained_at": "2026-06-27T03:36:19.252745",
+  "best_model": "Logistic Regression",
+  "models": {
+    "Random Forest": {
+      "accuracy": 99.8,
+      "f1_score": 0.998,
+      "cv_mean": 99.87,
+      "cv_std": 0.08,
+      "report": {
+        "Backend Developer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "Cloud Architect": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "Cybersecurity Engineer": {
+          "precision": 0.9880952380952381,
+          "recall": 1.0,
+          "f1-score": 0.9940119760479041,
+          "support": 83.0
+        },
+        "Data Analyst": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 84.0
+        },
+        "Data Scientist": {
+          "precision": 1.0,
+          "recall": 0.9879518072289156,
+          "f1-score": 0.9939393939393939,
+          "support": 83.0
+        },
+        "Database Administrator": {
+          "precision": 1.0,
+          "recall": 0.9879518072289156,
+          "f1-score": 0.9939393939393939,
+          "support": 83.0
+        },
+        "DevOps Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 84.0
+        },
+        "Frontend Developer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 84.0
+        },
+        "Full Stack Developer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "Machine Learning Engineer": {
+          "precision": 0.9880952380952381,
+          "recall": 1.0,
+          "f1-score": 0.9940119760479041,
+          "support": 83.0
+        },
+        "Mobile Developer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "Software Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "accuracy": 0.997997997997998,
+        "macro avg": {
+          "precision": 0.9980158730158729,
+          "recall": 0.9979919678714859,
+          "f1-score": 0.9979918949978831,
+          "support": 999.0
+        },
+        "weighted avg": {
+          "precision": 0.9980218313551648,
+          "recall": 0.997997997997998,
+          "f1-score": 0.9979979253432347,
+          "support": 999.0
+        }
+      }
+    },
+    "Decision Tree": {
+      "accuracy": 88.39,
+      "f1_score": 0.8852,
+      "cv_mean": 90.36,
+      "cv_std": 1.25,
+      "report": {
+        "Backend Developer": {
+          "precision": 0.8478260869565217,
+          "recall": 0.9397590361445783,
+          "f1-score": 0.8914285714285715,
+          "support": 83.0
+        },
+        "Cloud Architect": {
+          "precision": 0.974025974025974,
+          "recall": 0.9036144578313253,
+          "f1-score": 0.9375,
+          "support": 83.0
+        },
+        "Cybersecurity Engineer": {
+          "precision": 0.8375,
+          "recall": 0.8072289156626506,
+          "f1-score": 0.8220858895705522,
+          "support": 83.0
+        },
+        "Data Analyst": {
+          "precision": 0.8876404494382022,
+          "recall": 0.9404761904761905,
+          "f1-score": 0.9132947976878613,
+          "support": 84.0
+        },
+        "Data Scientist": {
+          "precision": 0.9558823529411765,
+          "recall": 0.7831325301204819,
+          "f1-score": 0.8609271523178808,
+          "support": 83.0
+        },
+        "Database Administrator": {
+          "precision": 0.6846846846846847,
+          "recall": 0.9156626506024096,
+          "f1-score": 0.7835051546391752,
+          "support": 83.0
+        },
+        "DevOps Engineer": {
+          "precision": 0.9506172839506173,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.9333333333333333,
+          "support": 84.0
+        },
+        "Frontend Developer": {
+          "precision": 0.8809523809523809,
+          "recall": 0.8809523809523809,
+          "f1-score": 0.8809523809523809,
+          "support": 84.0
+        },
+        "Full Stack Developer": {
+          "precision": 0.9726027397260274,
+          "recall": 0.8554216867469879,
+          "f1-score": 0.9102564102564102,
+          "support": 83.0
+        },
+        "Machine Learning Engineer": {
+          "precision": 0.9036144578313253,
+          "recall": 0.9036144578313253,
+          "f1-score": 0.9036144578313253,
+          "support": 83.0
+        },
+        "Mobile Developer": {
+          "precision": 0.8850574712643678,
+          "recall": 0.927710843373494,
+          "f1-score": 0.9058823529411765,
+          "support": 83.0
+        },
+        "Software Engineer": {
+          "precision": 0.9324324324324325,
+          "recall": 0.8313253012048193,
+          "f1-score": 0.8789808917197452,
+          "support": 83.0
+        },
+        "accuracy": 0.8838838838838838,
+        "macro avg": {
+          "precision": 0.8927363595169758,
+          "recall": 0.8837970931344427,
+          "f1-score": 0.8851467827232011,
+          "support": 999.0
+        },
+        "weighted avg": {
+          "precision": 0.8927774015948441,
+          "recall": 0.8838838838838838,
+          "f1-score": 0.8852189950993813,
+          "support": 999.0
+        }
+      }
+    },
+    "Logistic Regression": {
+      "accuracy": 99.9,
+      "f1_score": 0.999,
+      "cv_mean": 99.9,
+      "cv_std": 0.09,
+      "report": {
+        "Backend Developer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "Cloud Architect": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "Cybersecurity Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "Data Analyst": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 84.0
+        },
+        "Data Scientist": {
+          "precision": 1.0,
+          "recall": 0.9879518072289156,
+          "f1-score": 0.9939393939393939,
+          "support": 83.0
+        },
+        "Database Administrator": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "DevOps Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 84.0
+        },
+        "Frontend Developer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 84.0
+        },
+        "Full Stack Developer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "Machine Learning Engineer": {
+          "precision": 0.9880952380952381,
+          "recall": 1.0,
+          "f1-score": 0.9940119760479041,
+          "support": 83.0
+        },
+        "Mobile Developer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "Software Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 83.0
+        },
+        "accuracy": 0.998998998998999,
+        "macro avg": {
+          "precision": 0.9990079365079364,
+          "recall": 0.998995983935743,
+          "f1-score": 0.9989959474989415,
+          "support": 999.0
+        },
+        "weighted avg": {
+          "precision": 0.9990109156775824,
+          "recall": 0.998998998998999,
+          "f1-score": 0.9989989626716174,
+          "support": 999.0
+        }
+      }
+    }
+  }
+}
