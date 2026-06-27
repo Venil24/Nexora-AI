@@ -1,2 +1,0 @@
-# Keep certs folder empty by default.
-# Place your server.crt and server.key here if enabling SSL/HTTPS.
