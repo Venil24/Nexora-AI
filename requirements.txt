@@ -15,18 +15,18 @@ pymongo==4.7.3
 dnspython==2.6.1
 
 # Data & ML
-pandas==2.2.2
-numpy==1.26.4
-scikit-learn==1.5.0
+pandas
+numpy
+scikit-learn
 joblib==1.4.2
 
 # NLP
-spacy==3.7.5
+spacy
 nltk==3.8.1
-sentence-transformers==2.7.0
+sentence-transformers
 
 # PDF Processing
-PyMuPDF==1.24.5
+PyMuPDF
 
 # PDF Report Generation
 reportlab==4.2.2
